@@ -16,3 +16,12 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 0px;
 }
+
+.masthead{
+  height:100vh;
+  min-height:500px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%, #000000 100%), url("../assets/masthead-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
