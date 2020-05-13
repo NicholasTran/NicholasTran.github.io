@@ -4,6 +4,7 @@ html{
 }
 
 body{
+  position: relative;
   letter-spacing: 0.0625em;
   font-weight: 500;
   font-family: 'Open Sans', sans-serif;
@@ -56,7 +57,8 @@ body{
   }
   #mainNav.smallNav .nav-link {
     color: #000000;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
   }
   #mainNav.smallNav .nav-link:hover {
     color: #7395ae;
@@ -64,7 +66,10 @@ body{
   #mainNav.smallNav .nav-link:active {
     color: #467370;
   }
-
+  #mainNav.smallNav .nav-link.active {
+    color: #7395ae;
+    border-bottom: 0.25rem solid #7395ae;
+  }
 }
 
 .masthead{
