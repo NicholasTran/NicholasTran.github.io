@@ -73,8 +73,11 @@ body{
 }
 
 .masthead{
-  height:100vh;
-  min-height:500px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/cablecar.jpeg");
   background-size: cover;
   background-position: center;
@@ -83,7 +86,7 @@ body{
 
 .masthead h1{
   font-family: 'Open Sans', 'Ubuntu', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   color: rgba(255, 255, 255, 0.7);
@@ -92,6 +95,20 @@ body{
 .masthead p{
   font-family: 'Ubuntu', sans-serif;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-width:750px) {
+  .masthead h1{
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .masthead h1{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 .page-section{
