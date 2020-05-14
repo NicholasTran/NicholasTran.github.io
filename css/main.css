@@ -80,3 +80,15 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.masthead h1{
+  font-family: 'Open Sans', 'Ubuntu', sans-serif;
+  font-size: 3.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.masthead p{
+  color: rgba(255, 255, 255, 0.7);
+}
