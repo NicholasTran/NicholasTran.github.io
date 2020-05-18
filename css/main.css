@@ -112,18 +112,28 @@ body{
 }
 
 .page-section{
-  padding: 7rem;
+  padding: 6rem;
 }
 
 .section-header{
   font-family: 'Open Sans', sans-serif;
-  padding-bottom: 2rem;
   font-size: 2.5rem;
 }
 
-.section-text{
+.section-subheading{
   font-family: 'Ubuntu', sans-serif;
-  font-size
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.skills-text{
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.proficiency-text{
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
 }
 
 .skills-img{
