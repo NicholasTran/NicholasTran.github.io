@@ -72,6 +72,10 @@ body{
   }
 }
 
+#skills{
+  background-color: #f5f6f7;
+}
+
 .masthead{
   position: relative;
   width: 100%;
@@ -128,15 +132,18 @@ body{
 
 .skills-text{
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
   padding-bottom: 1rem;
 }
 
 .proficiency-text{
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .skills-img{
   font-size: 5em;
-  color: #3087cf;
+  color: #4783b5;
 }
