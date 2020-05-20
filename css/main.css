@@ -76,6 +76,14 @@ body{
   background-color: #f5f6f7;
 }
 
+#projects{
+  background-color: #e6e7e8;
+}
+
+#about{
+  background-color: #e6e7e8;
+}
+
 .masthead{
   position: relative;
   width: 100%;
@@ -116,7 +124,7 @@ body{
 }
 
 .page-section{
-  padding: 6rem;
+  padding: 6rem 0;
 }
 
 .section-header{
@@ -146,4 +154,31 @@ body{
 .skills-img{
   font-size: 5em;
   color: #4783b5;
+}
+
+.project-item{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-thumbnail{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-hover{
+  display:flex;
+  width:100%;
+  align-items: center;
+    overflow:hidden;
+  justify-content: center;
+}
+
+.project-hover img{
+  transition: transform .5s ease;
+}
+
+.project-hover:hover img{
+  transform: scale(1.15);
 }
