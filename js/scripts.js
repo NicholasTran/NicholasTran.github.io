@@ -1,5 +1,10 @@
+//Grab our current Url
+var url = window.location.toString();
+//Remove anchor from url using the split
+url = url.split(“#”)[0];
+
 // Collapse Navbar if scrolled past a certain amount.
-var collapseNav = function () {
+var collapseNav = function() {
   if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("smallNav");
   } else {
@@ -12,4 +17,10 @@ collapseNav();
 $(window).scroll(collapseNav);
 
 //Use scrollspy to highlight nav links when active
-$("body").scrollspy({target: "#mainNav"})
+$("body").scrollspy({target: "#mainNav"});
+
+
+//Collapse navbar when scroll link is pressed
+$(".scroll-trigger").click(function() {
+  $(".navbar-collapse").collapse("hide");
+});

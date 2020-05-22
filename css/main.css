@@ -1,5 +1,5 @@
 html{
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family:'Open Sans',sans-serif;
 }
 
@@ -193,6 +193,7 @@ body{
   padding: 1.5rem;
   text-align: center;
   background-color: #ffffff;
+  border-bottom: 0.25rem solid #7395ae;
 }
 
 .project-caption-heading{
