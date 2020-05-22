@@ -1,7 +1,3 @@
-//Grab our current Url
-var url = window.location.toString();
-//Remove anchor from url using the split
-url = url.split(“#”)[0];
 
 // Collapse Navbar if scrolled past a certain amount.
 var collapseNav = function() {
