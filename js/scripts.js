@@ -1,15 +1,32 @@
-//Remove anchor tag from url when anchor link clicked
-window.addEventListener("hashchange", function(event){
-    var noHashURL = window.location.href.replace(/#.*$/, '');
-    window.history.replaceState('', document.title, noHashURL);
+//Smooth Scroll with jQuery
+$("a.scroll-trigger").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+   if (this.hash !== "") {
+     // Prevent default anchor click behavior
+     event.preventDefault();
+
+     // Store hash
+     var hash = this.hash;
+
+     //Scroll using jQuery animate
+     $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 66
+      },
+      1000,
+      "easeInOutExpo"
+    );
+   }
 });
+
 //Collapse navbar when scroll link is pressed
 $(".scroll-trigger").click(function() {
   $(".navbar-collapse").collapse("hide");
 });
 
 //Use scrollspy to highlight nav links when active
-$("body").scrollspy({target: "#mainNav"});
+$("body").scrollspy({target: "#mainNav", offset:100});
 
 // Collapse Navbar if scrolled past a certain amount.
 var collapseNav = function() {

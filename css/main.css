@@ -1,5 +1,5 @@
 html{
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family:'Open Sans',sans-serif;
 }
 
@@ -89,6 +89,10 @@ body{
   min-height: 1600px;
 }
 
+#contact{
+  min-height: 1600px;
+}
+
 .masthead{
   position: relative;
   width: 100%;
@@ -129,7 +133,7 @@ body{
 }
 
 .page-section{
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .section-header{
