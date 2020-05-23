@@ -13,6 +13,10 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.disable-hover{
+  pointer-events: none;
+}
+
 #mainNav {
   min-height: 4rem;
   background-color: #fff;
