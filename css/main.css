@@ -88,7 +88,12 @@ body{
 }
 
 #contact{
-  min-height: 1600px;
+  position: relative;
+  width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/stingray.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .masthead{
@@ -134,7 +139,7 @@ body{
   padding: 4rem 0;
 }
 
-.section-header{
+.section-heading{
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
 }
@@ -248,4 +253,17 @@ body{
 .education-text{
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.1rem;
+}
+
+#contact .section-heading{
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2.5rem;
+}
+
+#contact .section-subheading{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
 }
