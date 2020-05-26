@@ -65,9 +65,7 @@ body{
   #mainNav.smallNav .nav-link:hover {
     color: #7395ae;
   }
-  #mainNav.smallNav .nav-link:active {
-    color: #467370;
-  }
+
   #mainNav.smallNav .nav-link.active {
     color: #7395ae;
     border-bottom: 0.25rem solid #7395ae;
@@ -90,7 +88,7 @@ body{
 #contact{
   position: relative;
   width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/stingray.jpeg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 75%, #000000 100%), url("../assets/stingray.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -218,7 +216,7 @@ body{
 
 .project-caption-subheading{
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -257,13 +255,88 @@ body{
 
 #contact .section-heading{
   font-family: 'Open Sans', sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   font-size: 2.5rem;
 }
 
 #contact .section-subheading{
-    color: rgba(255, 255, 255, 0.7);
     font-family: 'Ubuntu', sans-serif;
+    color: #fff;
     font-size: 1.2rem;
     padding-bottom: 3rem;
+}
+
+.social{
+  padding: 0 4rem;
+  justify-content: left;
+  margin-left: 40px;
+}
+
+.social a{
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social a:hover{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social a:active{
+  color: #fff;
+}
+
+.contact-element{
+  padding: 2rem;
+}
+
+.contact-marker{
+  color:#fff;
+  font-size: 25px;
+  margin: 30px;
+}
+
+.contact-element-head{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.contact-element-text{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin:85px;
+}
+
+.form-spacing{
+  margin-top: 30px;
+}
+.form-control-textarea{
+  width: 100%;
+  min-height: 200px;
+  resize: none;
+}
+
+.contact-submit{
+  background-color: #7395ae;
+  color: #fff;
+}
+
+.contact-submit:hover{
+    background-color: #467370;
+    color: #fff;
+}
+
+.footer{
+  min-height: 140px;
+  justify-content: center;
+  padding-top: 180px;
 }
