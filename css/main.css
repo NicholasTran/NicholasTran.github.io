@@ -268,8 +268,7 @@ body{
 
 .social{
   padding: 0 4rem;
-  justify-content: left;
-  margin-left: 40px;
+  justify-content: center;
 }
 
 .social a{
@@ -292,13 +291,13 @@ body{
 }
 
 .contact-element{
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .contact-marker{
   color:#fff;
   font-size: 25px;
-  margin: 30px;
+  margin-right: 10px;
 }
 
 .contact-element-head{
