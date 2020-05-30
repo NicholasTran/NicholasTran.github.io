@@ -105,7 +105,7 @@
 					<div class="row text-center">
 						<div class="col-md-6 mb-4">
 							<div class="project-item">
-								<a class="project-thumbnail" data-toggle="modal" href="#">
+								<a class="project-thumbnail" data-toggle="modal" href="#roadmapmodal" onclick="javascript:openModal()">
 									<div class="project-hover">
 										<img class="img-fluid" src="assets/mainMap.png" alt="">
 									</div>
@@ -179,10 +179,7 @@
 							<h4 class="education-subheading">Toronto District Christian High School</h4>
 							<p class="education-text-date">2013-2018</p>
 							<p class="education-text">Governor General's Academic Medal receipiant <br> Average: 98.5%</p>
-
-
 						</div>
-
 					</div>
 				</div>
 			</section>
@@ -221,7 +218,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<form class="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycby4Y6GtpKab_VZYuVYklRXcvOaS1oeVIfY0JxpWozNNt-w5qOk/exec">
+							<form class="gfseorm" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycby4Y6GtpKab_VZYuVYklRXcvOaS1oeVIfY0JxpWozNNt-w5qOk/exec">
 						    <div class="form-group form-spacing">
 									<input type="nam" class="form-control" id="name" placeholder="Enter name *" name="name" required>
 						    </div>
@@ -244,7 +241,47 @@
 					<div class="container">Copyright © Nicholas Tran 2020</div>
 				</footer>
 			</section>
-
+			<!-- Portfolio Modals -->
+			<!-- Road Map Modal -->
+			<div class="portfolio-modal modal fade" id="roadmapmodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="exit-modal" data-dismiss="modal">
+							<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+						</div>
+							<div class="container">
+								<div class="row justify-content-center text-center">
+									<div class="col-lg-8">
+										<div class="modal-body">
+											<h3 class="modal-header-text">Road Map</h3>
+											<p class="modal-intro-text">Fully featured mapping software similar to Google Maps</p>
+											<img class="img-fluid " src="assets/mapLandingFull.png">
+											<p class="modal-text">This was a semester long project with the end goal being to create a functional,
+												fully featured mapping software similar to the likes of Google Maps. Written in C++, the project stressed
+												our skills in design, communication, software development and project management. The map features a graphical
+												interface, current road closures, multiple city maps, subway stations and road directions.</p>
+											<h4 class="modal-subhheading-text">Map Features</h4>
+											<img class="img-fluid mx-auto"src="assets/roadClosures.png" alt="">
+											<p class="modal-text">Current road closures</p>
+											<img class="img-fluid mx-auto"src="assets/subwayStations.png" alt="">
+											<p class="modal-text">Subway Stations</p>
+											<img class="img-fluid mx-auto"src="assets/drivingDirections.png" alt="">
+											<p class="modal-text">Subway Stations</p>
+											<h4 class="modal-subheading-text">The Algorithms</h4>
+											<p class="modal-text">To provide navigation directions, the map uses an A* algorithm to compute the shortest route
+												between intersections based on travel time. A* is a variation of
+												<a target="_blank"href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's Algorithm</a>, a well known Algorithm
+												used for finding the shortest path between nodes in a graph. A* trades some accuracy
+												for efficiency compared to Dijkstra's, relying on a heuristic to decide which node to visit next. It takes the current time to the current node,
+												and adds it to the estimated time to the destination, picking the shortest total time to be the next visited node.
+												As a result, A* usally ended up in a 3x-5x improvement in computation time.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			<!-- JavaScript -->
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->

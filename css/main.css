@@ -347,3 +347,22 @@ body{
   font-size: 16px;
   margin-top: 15px;
 }
+
+.modal-dialog {
+  margin: 0 auto;
+  max-width: 80vw;
+  justify-content: center;
+}
+
+.modal-body{
+  padding: 0;
+}
+
+.modal{
+  position: fixed;
+}
+
+.modal-open .body{
+  overflow: hidden;
+position:fixed;
+}
