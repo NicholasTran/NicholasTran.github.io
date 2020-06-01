@@ -105,11 +105,7 @@
 					<div class="row text-center">
 						<div class="col-md-6 mb-4">
 							<div class="project-item">
-								<a class="project-thumbnail" data-toggle="modal" href="#roadmapmodal">
-									<div class="project-hover">
-										<img class="img-fluid" src="assets/mainMap.png" alt="">
-									</div>
-								</a>
+								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#roadmapmodal"><img class="img-fluid" src="assets/mainMap.png" alt=""></button>
 								<div class="project-caption">
 									<div class="project-caption-heading">Road Map</div>
 									<div class="project-caption-subheading">Featured road mapping program similar to Google Maps</div>
@@ -118,11 +114,7 @@
 						</div>
 						<div class="col-md-6 mb-4">
 							<div class="project-item">
-								<a class="project-thumbnail" data-toggle="modal" href="#astropartymodal">
-									<div class="project-hover">
-										<img class="img-fluid" src="assets/AstroPartyMenuScreen.png" alt="">
-									</div>
-								</a>
+								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#astropartymodal"><img class="img-fluid" src="assets/AstroPartyMenuScreen.png" alt=""></button>
 								<div class="project-caption">
 									<div class="project-caption-heading">Astro Party</div>
 									<div class="project-caption-subheading">Game written in Verilog designed for use on an Intel FPGA</div>
@@ -131,34 +123,25 @@
 						</div>
 						<div class="col-md-6 mb-4">
 							<div class="project-item">
-								<a class="project-thumbnail" data-toggle="modal" href="#githubmodal">
-									<div class="project-hover">
-										<img class="img-fluid" src="assets/githubthumbnail.png" alt="">
-									</div>
-								</a>
+								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#githubmodal"><img class="img-fluid" src="assets/githubthumbnail.png" alt=""></button>
 								<div class="project-caption">
 									<div class="project-caption-heading">Github</div>
-									<div class="project-caption-subheading">Repositories of some current and past projects and work. </div>
+									<div class="project-caption-subheading">Repositories of some current and past projects and work.</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 mb-4">
 							<div class="project-item">
-								<a class="project-thumbnail" data-toggle="modal" href="#websitemodal">
-									<div class="project-hover">
-										<img class="img-fluid" src="assets/websiteHome.png" alt="">
-									</div>
-								</a>
+								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#websitemodal"><img class="img-fluid" src="assets/websiteHome.png" alt=""></button>
 								<div class="project-caption">
 									<div class="project-caption-heading">Personal Website</div>
-									<div class="project-caption-subheading">Introduction to basics of web design with HTML and CSS. </div>
+									<div class="project-caption-subheading">Introduction to basics of web design with HTML and CSS.</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
 
 			<!-- About -->
 			<section class="page-section" id="about">
@@ -247,7 +230,7 @@
 			<div class="portfolio-modal modal fade" id="roadmapmodal" tabindex="-1" role="dialog">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
-						<div class="exit-modal" data-dismiss="modal">
+						<div class="exit-modal">
 							<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
 						</div>
 							<div class="container">
@@ -294,11 +277,11 @@
 						</div>
 					</div>
 				</div>
-
+				<!--Astro Party Modal  -->
 				<div class="portfolio-modal modal fade" id="astropartymodal" tabindex="-1" role="dialog">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
-							<div class="exit-modal" data-dismiss="modal">
+							<div class="exit-modal">
 								<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
 							</div>
 								<div class="container">
@@ -306,30 +289,49 @@
 										<div class="col-lg-8">
 											<div class="modal-body">
 												<div class="modal-header-box">
-													<h2 class="modal-header-text">Road Map</h2>
-													<p class="modal-intro-text">Featured mapping software similar to Google Maps</p>
+													<h2 class="modal-header-text">Astro Party</h2>
+													<p class="modal-intro-text">Game written in Verilog designed for use on an Intel FPGA</p>
 												</div>
-												<img class="img-fluid modal-img" src="assets/mapLandingFull.png">
-												<p class="modal-text">This was a semester long project with the end goal being to create a functional,
-													fully featured mapping software similar to the likes of Google Maps. Written in C++, the project stressed
-													our skills in design, communication, software development and project management. The map features a graphical
-													interface, current road closures, multiple city maps, subway stations and road directions.</p>
-												<h4 class="modal-subhheading-text">Map Features</h4>
-
-												<img class="img-fluid mx-auto"src="assets/roadClosures.png" alt="">
-												<p class="modal-text">Current road closures</p>
-												<img class="img-fluid mx-auto"src="assets/subwayStations.png" alt="">
-												<p class="modal-text">Subway Stations</p>
-												<img class="img-fluid mx-auto"src="assets/drivingDirections.png" alt="">
-												<p class="modal-text">Subway Stations</p>
-												<h4 class="modal-subheading-text">The Algorithms</h4>
-												<p class="modal-text">To provide navigation directions, the map uses an A* algorithm to compute the shortest route
-													between intersections based on travel time. A* is a variation of
-													<a target="_blank"href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's Algorithm</a>, a well known Algorithm
-													used for finding the shortest path between nodes in a graph. A* trades some accuracy
-													for efficiency compared to Dijkstra's, relying on a heuristic to decide which node to visit next. It takes the current time to the current node,
-													and adds it to the estimated time to the destination, picking the shortest total time to be the next visited node.
-													As a result, in this case A* ended up in a 3x-5x improvement in computation time.</p>
+												<img class="img-fluid modal-img" src="assets/astropartyLanding.png">
+												<p class="modal-text">This was a final project for my digital systems course. Written in Verilog, it aims to be a take on the mobile game Astro Party.
+													Here, two players battle it out in spaceships, trying to destory the other player's ship, where the first to 5 eliminations is the winner.
+													Input was done via a PS2 Keyboard, and was outputted to a VGA display. Processing was done by a De1-SoC FPGA. </p>
+												<h4 class="modal-subhheading-text">Gallery</h4>
+												<div id="astropartycarousel" class="carousel slide" data-ride="carousel">
+  												<!-- Indicators -->
+  												<ul class="carousel-indicators">
+    												<li data-target="#astropartycarousel" data-slide-to="0" class="active"></li>
+    												<li data-target="#astropartycarousel" data-slide-to="1"></li>
+    												<li data-target="#astropartycarousel" data-slide-to="2"></li>
+  												</ul>
+  												<!-- The slideshow -->
+  												<div class="carousel-inner">
+    												<div class="carousel-item active">
+      												<img class="img-fluid" src="assets/AstroPartyMenuScreen.png" alt="asd">
+    												</div>
+    												<div class="carousel-item">
+      												<img class="img-fluid" src="assets/AstroPartyMenuScreen.png" alt="asd">
+    												</div>
+    												<div class="carousel-item">
+      												<img class="img-fluid" src="assets/AstroPartyMenuScreen.png" alt="asd">
+    												</div>
+									  			</div>
+													<!-- Left and right controls -->
+  												<a class="carousel-control-prev" href="#astropartycarousel" data-slide="prev">
+    												<span class="carousel-control-prev-icon"></span>
+  												</a>
+  												<a class="carousel-control-next" href="#astropartycarousel" data-slide="next">
+    												<span class="carousel-control-next-icon"></span>
+  												</a>
+												</div>
+												<div class="modal-quick-list">
+													<ul class="list-inline">
+														<li>Date: November 2019</li>
+														<li>Language: Verilog</li>
+														<li><a class="github-link" target="_blank" href="https://github.com/NicholasTran/AstroParty_Verilog-Game"><i class="fab fa-github"></i></a></li>
+													</ul>
+													<button class="btn btn-default close-project"type="button" data-dismiss="modal" name="button">Close Project</button>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -337,11 +339,11 @@
 							</div>
 						</div>
 					</div>
-
+					<!-- Github Modal -->
 					<div class="portfolio-modal modal fade" id="githubmodal" tabindex="-1" role="dialog">
 						<div class="modal-dialog modal-lg">
 							<div class="modal-content">
-								<div class="exit-modal" data-dismiss="modal">
+								<div class="exit-modal">
 									<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
 								</div>
 									<div class="container">
@@ -379,11 +381,11 @@
 								</div>
 							</div>
 						</div>
-
+						<!-- Website Modal -->
 						<div class="portfolio-modal modal fade" id="websitemodal" tabindex="-1" role="dialog">
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
-									<div class="exit-modal" data-dismiss="modal">
+									<div class="exit-modal">
 										<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
 									</div>
 										<div class="container">
