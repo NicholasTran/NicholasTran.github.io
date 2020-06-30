@@ -141,7 +141,7 @@
 						</div>
 						<div class="col-md-4 mb-4">
 							<div class="project-item">
-								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#websitemodal"><img class="img-fluid" src="assets/frogThumbnail.png" alt=""></button>
+								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#frogmodal"><img class="img-fluid" src="assets/frogThumbnail.png" alt=""></button>
 								<div class="project-caption">
 									<div class="project-caption-heading">Catch the Flies</div>
 									<div class="project-caption-subheading">C based game designed for use on a FPGA</div>
@@ -150,7 +150,7 @@
 						</div>
 						<div class="col-md-4 mb-4">
 							<div class="project-item">
-								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#websitemodal"><img class="img-fluid" src="assets/typingThumbnail.png" alt=""></button>
+								<button type="image" class="btn project-hover" data-toggle="modal" data-target="#typingmodal"><img class="img-fluid" src="assets/typingThumbnail.png" alt=""></button>
 								<div class="project-caption">
 									<div class="project-caption-heading">TypeTest</div>
 									<div class="project-caption-subheading">Python based words per minute calculator</div>
@@ -327,19 +327,19 @@
   												<!-- The slideshow -->
   												<div class="carousel-inner">
     												<div class="carousel-item active">
-      												<img class="img-fluid" src="assets/apcarousel1.png" alt="asd">
+      												<img class="img-fluid" src="assets/apcarousel1.png" alt="">
     												</div>
     												<div class="carousel-item">
-      												<img class="img-fluid" src="assets/apcarousel2.png" alt="asd">
+      												<img class="img-fluid" src="assets/apcarousel2.png" alt="">
     												</div>
     												<div class="carousel-item">
-      												<img class="img-fluid" src="assets/apcarousel3.png" alt="asd">
+      												<img class="img-fluid" src="assets/apcarousel3.png" alt="">
     												</div>
 														<div class="carousel-item">
-															<img class="img-fluid" src="assets/apcarousel4.png" alt="asd">
+															<img class="img-fluid" src="assets/apcarousel4.png" alt="">
 														</div>
 														<div class="carousel-item">
-															<img class="img-fluid" src="assets/apcarousel5.png" alt="asd">
+															<img class="img-fluid" src="assets/apcarousel5.png" alt="">
 														</div>
 									  			</div>
 													<!-- Left and right controls -->
@@ -432,6 +432,120 @@
 									</div>
 								</div>
 							</div>
+							<!-- Frog Game Modal -->
+							<div class="portfolio-modal modal fade" id="frogmodal" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="exit-modal">
+											<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+										</div>
+											<div class="container">
+												<div class="row justify-content-center text-center">
+													<div class="col-lg-8">
+														<div class="modal-body">
+															<div class="modal-header-box">
+																<h2 class="modal-header-text">Catch the Flies</h2>
+																<p class="modal-intro-text">C based game designed for use on a FPGA.</p>
+															</div>
+															<div id="frogcarousel" class="carousel slide" data-ride="carousel">
+																<!-- Indicators -->
+																<ul class="carousel-indicators">
+																	<li data-target="#frogcarousel" data-slide-to="0" class="active"></li>
+																	<li data-target="#frogcarousel" data-slide-to="1"></li>
+																</ul>
+																<!-- The slideshow -->
+																<div class="carousel-inner">
+																	<div class="carousel-item active">
+																		<img class="img-fluid" src="assets/frogStartScreen.png" alt="">
+																	</div>
+																	<div class="carousel-item">
+																		<img class="img-fluid" src="assets/frogInGame.png" alt="">
+																	</div>
+																</div>
+																<!-- Left and right controls -->
+																<a class="carousel-control-prev" href="#frogcarousel" data-slide="prev">
+																	<span class="carousel-control-prev-icon"></span>
+																</a>
+																<a class="carousel-control-next" href="#frogcarousel" data-slide="next">
+																	<span class="carousel-control-next-icon"></span>
+																</a>
+															</div>
+															<p class="modal-text">This project aims to recreate a popular type of arcade game, where you try and catch falling objects. This was written for an Intel De1-SoC FPGA, with a keyboard input and VGA output.
+																In this game, a player controls a frog with arrow keys, trying to catch falling flies. They have three lives, and the flies increase in velocity and frequency as time goes on. Keyboard generated interrupts were used
+														 		to control the frog, and graphics were handled by double buffering the VGA pixel buffer.
+															</p>
+																<div class="modal-quick-list">
+																	<ul class="list-inline">
+																		<li>Date: April 2020</li>
+																		<li>Language: C</li>
+																		<li><a class="github-link" target="_blank" href="https://github.com/NicholasTran/catch-the-flies"><i class="fab fa-github"></i></a></li>
+																	</ul>
+																	<button class="btn btn-default close-project"type="button" data-dismiss="modal" name="button">Close Project</button>
+																</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Typing Test Modal -->
+								<div class="portfolio-modal modal fade" id="typingmodal" tabindex="-1" role="dialog">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="exit-modal">
+												<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+											</div>
+												<div class="container">
+													<div class="row justify-content-center text-center">
+														<div class="col-lg-8">
+															<div class="modal-body">
+																<div class="modal-header-box">
+																	<h2 class="modal-header-text">Catch the Flies</h2>
+																	<p class="modal-intro-text">C based game designed for use on a FPGA.</p>
+																</div>
+																<div id="frogcarousel" class="carousel slide" data-ride="carousel">
+																	<!-- Indicators -->
+																	<ul class="carousel-indicators">
+																		<li data-target="#frogcarousel" data-slide-to="0" class="active"></li>
+																		<li data-target="#frogcarousel" data-slide-to="1"></li>
+																	</ul>
+																	<!-- The slideshow -->
+																	<div class="carousel-inner">
+																		<div class="carousel-item active">
+																			<img class="img-fluid" src="assets/frogStartScreen.png" alt="">
+																		</div>
+																		<div class="carousel-item">
+																			<img class="img-fluid" src="assets/frogInGame.png" alt="">
+																		</div>
+																	</div>
+																	<!-- Left and right controls -->
+																	<a class="carousel-control-prev" href="#frogcarousel" data-slide="prev">
+																		<span class="carousel-control-prev-icon"></span>
+																	</a>
+																	<a class="carousel-control-next" href="#frogcarousel" data-slide="next">
+																		<span class="carousel-control-next-icon"></span>
+																	</a>
+																</div>
+																<p class="modal-text">This project aims to recreate a popular type of arcade game, where you try and catch falling objects. This was written for an Intel De1-SoC FPGA, with a keyboard input and VGA output.
+																	In this game, a player controls a frog with arrow keys, trying to catch falling flies. They have three lives, and the flies increase in velocity and frequency as time goes on. Keyboard generated interrupts were used
+																	to control the frog, and graphics were handled by double buffering the VGA pixel buffer.
+																</p>
+																	<div class="modal-quick-list">
+																		<ul class="list-inline">
+																			<li>Date: April 2020</li>
+																			<li>Language: C</li>
+																			<li><a class="github-link" target="_blank" href="https://github.com/NicholasTran/catch-the-flies"><i class="fab fa-github"></i></a></li>
+																		</ul>
+																		<button class="btn btn-default close-project"type="button" data-dismiss="modal" name="button">Close Project</button>
+																	</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 
 			<!-- JavaScript -->
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
